@@ -37,9 +37,7 @@ export default function RemoveBackgroundPage() {
 
   return (
     <ToolLayout
-      title="Remove Background"
-      description="AI-powered background removal that runs entirely on your device."
-    >
+      title="Remove Background"      description="Erase the background from a photo and export it with transparency.">
 
       {compatReport && compatReport.warnings.length > 0 && (
         <BrowserCompat report={compatReport} />
@@ -130,6 +128,8 @@ export default function RemoveBackgroundPage() {
             <BeforeAfterSlider
               beforeSrc={originalUrl}
               afterSrc={resultUrl}
+              beforeLabel="Original"
+              afterLabel="Removed"
             />
 
             <div className="flex items-center justify-between gap-4 flex-wrap">

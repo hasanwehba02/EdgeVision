@@ -1,7 +1,7 @@
 {
-  "name": "EdgeVision — AI Image Tools",
+  "name": "EdgeVision — Image Tools",
   "short_name": "EdgeVision",
-  "description": "7 AI-powered image tools that run 100% locally in your browser.",
+  "description": "Edit images in your browser: remove backgrounds, enhance, crop, compress, upscale, and denoise.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0a",

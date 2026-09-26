@@ -25,11 +25,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "EdgeVision — AI Image Tools in Your Browser",
+    default: "EdgeVision — Image Tools in Your Browser",
     template: "%s | EdgeVision",
   },
   description:
-    "7 AI-powered image tools that run 100% locally in your browser. Remove backgrounds, enhance photos, crop, compress, upscale, and denoise — no uploads, no servers.",
+    "Edit images in your browser: remove backgrounds, enhance photos, crop, compress, upscale, and denoise.",
   keywords: [
     "image editor",
     "background remover",
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
   ],
   manifest: "/manifest.json",
   openGraph: {
-    title: "EdgeVision — AI Image Tools in Your Browser",
+    title: "EdgeVision — Image Tools in Your Browser",
     description:
-      "7 AI-powered image tools, 100% private. No uploads, no servers.",
+      "Remove backgrounds, enhance photos, crop, compress, upscale, and denoise — right in your browser.",
     type: "website",
   },
 };

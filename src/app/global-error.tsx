@@ -11,7 +11,7 @@ export default function GlobalError({
 }) {
   return (
     <html lang="en">
-      <body className="antialiased bg-ev-background text-ev-text flex items-center justify-center min-h-dvh">
+      <body className="antialiased bg-ev-black text-ev-text flex items-center justify-center min-h-dvh">
         <div className="text-center p-8">
           <AlertTriangle className="w-12 h-12 text-ev-danger mx-auto mb-6" />
           <h2 className="font-sora text-2xl font-bold text-ev-text-bright mb-4">

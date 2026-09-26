@@ -122,6 +122,8 @@ export default function DenoisePage() {
               afterSrc={previewUrl}
               beforeAlt="Original (noisy)"
               afterAlt="Denoised"
+              beforeLabel="Original"
+              afterLabel="Denoised"
             />
 
 

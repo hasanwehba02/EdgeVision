@@ -176,6 +176,8 @@ export default function RemoveObjectPage() {
               afterSrc={resultUrl}
               beforeAlt="Original"
               afterAlt="Object removed"
+              beforeLabel="Original"
+              afterLabel="Object removed"
             />
 
             <div className="flex items-center justify-between gap-4 flex-wrap">

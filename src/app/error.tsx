@@ -26,7 +26,7 @@ export default function ErrorBoundary({
       </h2>
       
       <p className="text-ev-text-muted max-w-[40ch] mb-8 leading-relaxed">
-        EdgeVision runs complex AI models directly in your browser. This crash was likely caused by running out of memory. Try using a smaller image.
+        Processing didn’t finish. This usually means the browser ran out of memory — try a smaller image.
       </p>
 
       <button

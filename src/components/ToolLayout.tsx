@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import { PrivacyBadge } from "@/components/PrivacyBadge";
 
 interface ToolLayoutProps {
   title: string;
@@ -15,17 +14,19 @@ export function ToolLayout({ title, description, children }: ToolLayoutProps) {
   return (
     <div className="min-h-dvh flex flex-col">
       {/* Header */}
-      <header className="w-full border-b border-ev-border/50">
+      <header className="w-full border-b border-ev-border/60">
         <div className="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
           <Link
             href="/"
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-2.5"
           >
-            <span className="font-sora text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-ev-text-bright to-ev-accent">
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg border border-ev-border bg-white/[0.04]">
+              <span className="h-2.5 w-2.5 rounded-full bg-ev-accent" />
+            </span>
+            <span className="font-sora text-lg font-semibold tracking-tight text-ev-text-bright">
               EdgeVision
             </span>
           </Link>
-          <PrivacyBadge />
         </div>
       </header>
 

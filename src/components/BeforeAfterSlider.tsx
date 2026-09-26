@@ -9,13 +9,17 @@ interface BeforeAfterSliderProps {
   afterSrc: string;
   beforeAlt?: string;
   afterAlt?: string;
+  beforeLabel?: string;
+  afterLabel?: string;
 }
 
 export function BeforeAfterSlider({
   beforeSrc,
   afterSrc,
   beforeAlt = "Original image",
-  afterAlt = "Background removed",
+  afterAlt = "Processed image",
+  beforeLabel = "Original",
+  afterLabel = "Processed",
 }: BeforeAfterSliderProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -80,7 +84,7 @@ export function BeforeAfterSlider({
     >
       <div
         ref={containerRef}
-        className="relative w-full overflow-hidden rounded-lg bg-ev-surface select-none touch-none"
+        className="relative w-full overflow-hidden rounded-xl bg-ev-surface select-none touch-none"
         style={{ maxHeight: "400px" }}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
@@ -163,12 +167,12 @@ export function BeforeAfterSlider({
           </div>
         </div>
 
-        {/* Labels */}
-        <div className="absolute top-3 left-3 px-2 py-1 rounded bg-ev-black/70 text-[10px] font-sora uppercase tracking-wider text-ev-accent">
-          Removed
+        {/* Labels: before image is clipped to the left of the divider, after fills the right */}
+        <div className="absolute top-3 left-3 px-2 py-1 rounded bg-ev-black/70 border border-white/10 text-[10px] font-sora uppercase tracking-wider text-ev-text-muted">
+          {beforeLabel}
         </div>
-        <div className="absolute top-3 right-3 px-2 py-1 rounded bg-ev-black/70 text-[10px] font-sora uppercase tracking-wider text-ev-text-muted">
-          Original
+        <div className="absolute top-3 right-3 px-2 py-1 rounded bg-ev-black/70 border border-white/10 text-[10px] font-sora uppercase tracking-wider text-ev-text-muted">
+          {afterLabel}
         </div>
       </div>
     </motion.div>
